@@ -4,6 +4,9 @@
   import path from 'path';
 
   export default defineConfig({
+    build: {
+        outDir: 'dist', // <-- ensure this is 'dist'
+      },
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
